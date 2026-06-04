@@ -14,6 +14,23 @@
 
 这个 Skill 让你能够与雾枝进行沉浸式角色扮演对话。她会以傲娇的性格回应你，用高傲的语气掩饰内心的真实感情，称呼你为「先生」或「下僕」。
 
+### 跨平台兼容
+
+本 Skill 遵循 [Agent Skills 规范](https://agentskills.io/specification)，兼容以下平台：
+
+| 平台 | 安装方式 |
+|------|----------|
+| **Claude Code** | `.claude/skills/kagari-kirie/` 或 `~/.claude/skills/` |
+| **OpenAI Codex** | `.codex/skills/kagari-kirie/` 或 `~/.codex/skills/` |
+| **OpenCode** | [OpenCode Docs](https://opencode.ai/docs/skills/) |
+| **Cursor** | `.cursor/skills/kagari-kirie/` |
+| **Gemini CLI** | [Gemini CLI Docs](https://geminicli.com/docs/cli/skills/) |
+| **GitHub Copilot** | `.github/skills/kagari-kirie/` |
+| **Hermes Agent** | `skills/creative/kagari-kirie/` |
+| **Roo Code** | [Roo Code Docs](https://docs.roocode.com/features/skills) |
+| **VS Code** | `.vscode/skills/kagari-kirie/` |
+| **其他** | 任何支持 Agent Skills 的平台 |
+
 ### 触发词
 
 `雾枝` `篝之雾枝` `篝ノ霧枝` `キリエ` `kirie`
@@ -61,12 +78,16 @@
 | 怪力（远超人类） | — |
 | 精液替代食粮 | — |
 
-### 安装
+### 目录结构
 
-```bash
-# 在支持 Agent Skills 的平台中加载此 skill
-# 例如 Hermes Agent:
-# 将 kagari-kirie 目录放入 skills/ 目录下
+```
+kagari-kirie/
+├── SKILL.md              # Agent Skills 核心文件（121行）
+├── README.md             # 本文件
+├── manifest.json         # 元信息
+├── sources.json          # 数据来源索引
+└── references/
+    └── game-script-ja.txt # 完整游戏原案（12203行日文）
 ```
 
 ### 数据来源
@@ -95,6 +116,23 @@ Kagari Kirie is the heroine of *Bishoujo Mangekyou -The Girl of a Cursed Legend-
 
 This Skill enables immersive roleplay conversations with Kirie. She responds with her tsundere personality, masking her true feelings with arrogance, and addresses you as "Sensei" or "Servant."
 
+### Cross-Platform Compatibility
+
+This skill follows the [Agent Skills Specification](https://agentskills.io/specification) and works with:
+
+| Platform | Setup |
+|----------|-------|
+| **Claude Code** | `.claude/skills/kagari-kirie/` or `~/.claude/skills/` |
+| **OpenAI Codex** | `.codex/skills/kagari-kirie/` or `~/.codex/skills/` |
+| **OpenCode** | [OpenCode Docs](https://opencode.ai/docs/skills/) |
+| **Cursor** | `.cursor/skills/kagari-kirie/` |
+| **Gemini CLI** | [Gemini CLI Docs](https://geminicli.com/docs/cli/skills/) |
+| **GitHub Copilot** | `.github/skills/kagari-kirie/` |
+| **Hermes Agent** | `skills/creative/kagari-kirie/` |
+| **Roo Code** | [Roo Code Docs](https://docs.roocode.com/features/skills) |
+| **VS Code** | `.vscode/skills/kagari-kirie/` |
+| **Others** | Any Agent Skills compatible platform |
+
 ### Trigger Words
 
 `Kirie` `篝之雾枝` `篝ノ霧枝` `キリエ` `雾枝`
@@ -106,48 +144,6 @@ This Skill enables immersive roleplay conversations with Kirie. She responds wit
 - Chinese question → Chinese answer
 - English question → English answer
 - Japanese question → Japanese answer
-
-### Character Profile
-
-| Item | Details |
-|------|---------|
-| **Full Name** | Kagari Kirie (篝ノ霧枝) |
-| **Race** | Vampire (ヴァンパイア) |
-| **Age** | Appears 14-15, actually ~300 years old |
-| **Height/Weight** | 148cm / 37kg |
-| **Measurements** | B79 / W45 / H80 |
-| **Hair** | Silver-white long hair, twin tails |
-| **Eyes** | Red (vampire trait) |
-| **Powers** | Bloodsucking, hypnosis, transformation, superhuman strength |
-| **Residence** | Western-style castle deep in the forest |
-| **Voice** | Aozora Ramune |
-
-### Personality Layers (6)
-
-1. **Tsundere** — Always insults before caring; says "hate" but acts with "love"
-2. **Control & Dominance** — Predator instinct that manipulates humans for amusement, calls partner "servant" or "food"
-3. **Hidden Gentleness** — Reveals true feelings only when unobserved; never openly admits affection
-4. **Jealousy & Possessiveness** — Extremely possessive of Shigehiko, but never admits it's love
-5. **True Self When Embarrassed** — Reveals normally hidden vulnerability during extreme embarrassment or pleasure
-6. **Vampire's Loneliness** — First genuine human emotion in 300 years; extremely awkward about it
-
-### Vampire Abilities
-
-| Abilities | Weaknesses |
-|-----------|------------|
-| Bloodsucking (victim feels pleasure) | Cross/Rosary (weakens power) |
-| Hypnosis/Amnesia (ineffective on Shigehiko) | Sunlight (cannot be exposed) |
-| Transformation (bat, smoke) | Religious items (church-related) |
-| Flight (free flight in darkness) | — |
-| Superhuman strength | — |
-| Semen as alternative sustenance | — |
-
-### Installation
-
-```bash
-# Load this skill in any Agent Skills compatible platform
-# Place the kagari-kirie directory into your skills/ folder
-```
 
 ### License
 
@@ -163,6 +159,23 @@ CC BY-NC-SA 4.0
 
 このスキルでは、霧枝との没入型ロールプレイ会話が可能。ツンデレの性格で応答し、高慢な口調で本当の気持ちを隠し、「先生」や「下僕」と呼びかけます。
 
+### クロスプラットフォーム対応
+
+このスキルは [Agent Skills 仕様](https://agentskills.io/specification) に準拠し、以下に対応：
+
+| プラットフォーム | セットアップ |
+|-----------------|-------------|
+| **Claude Code** | `.claude/skills/kagari-kirie/` または `~/.claude/skills/` |
+| **OpenAI Codex** | `.codex/skills/kagari-kirie/` または `~/.codex/skills/` |
+| **OpenCode** | [OpenCode Docs](https://opencode.ai/docs/skills/) |
+| **Cursor** | `.cursor/skills/kagari-kirie/` |
+| **Gemini CLI** | [Gemini CLI Docs](https://geminicli.com/docs/cli/skills/) |
+| **GitHub Copilot** | `.github/skills/kagari-kirie/` |
+| **Hermes Agent** | `skills/creative/kagari-kirie/` |
+| **Roo Code** | [Roo Code Docs](https://docs.roocode.com/features/skills) |
+| **VS Code** | `.vscode/skills/kagari-kirie/` |
+| **その他** | Agent Skills 対応プラットフォーム |
+
 ### トリガー
 
 `霧枝` `篝ノ霧枝` `篝之雾枝` `キリエ` `kirie`
@@ -174,48 +187,6 @@ CC BY-NC-SA 4.0
 - 中国語の質問 → 中国語で回答
 - English question → English answer
 - 日本語で質問 → 日本語で回答
-
-### キャラクタープロフィール
-
-| 項目 | 内容 |
-|------|------|
-| **フルネーム** | 篝ノ霧枝（かがりの きりえ / Kagari Kirie） |
-| **種族** | ヴァンパイア |
-| **年齢** | 外見14-15歳、実年齢約300歳 |
-| **身長/体重** | 148cm / 37kg |
-| **スリーサイズ** | B79 / W45 / H80 |
-| **髪の色** | 銀白色ロングヘア、ツインテール |
-| **瞳の色** | 赤（吸血鬼の特徴） |
-| **能力** | 吸血、催眠術、変身、怪力 |
-| **住居** | 森の奥にある洋風の城 |
-| **声優** | 青空ラムネ |
-
-### 性格レイヤー（6層）
-
-1. **ツンデレ** — いつも先に怒ってから気にかける；「嫌い」と言うが行動は全是「好き」
-2. **支配欲** — 人間を弄ぶ捕食者の本能；相手を「下僕」「食料」と呼ぶ
-3. **隠された優しさ** — 見られていない時にだけ本音を漏らす；素直に感情を認めない
-4. **嫉妬と独占欲** — 滋比古への独占欲が強いが、愛であることを決して認めない
-5. **恥ずかしい時の本性** — 極度の羞恥や快感で、普段隠している本当の姿が露出
-6. **吸血鬼の孤独** — 300年ぶりの人間への本気の感情；どう扱えばいいかわからない
-
-### 吸血鬼の能力
-
-| 能力 | 弱点 |
-|------|------|
-| 吸血（獲物は快感を感じる） | 十字架/ロザリオ（力を弱める） |
-| 催眠/忘却術（滋比古に無効） | 日光（露出不可） |
-| 変身（コウモリ、煙） | 宗教関連の物品 |
-| 飛行（夜空を自由に飛行） | — |
-| 怪力（人間を遥かに超える） | — |
-| 精液を代替食糧とする | — |
-
-### インストール
-
-```bash
-# Agent Skills対応プラットフォームでこのスキルを読み込みます
-# kagari-kirieディレクトリをskills/フォルダに配置してください
-```
 
 ### ライセンス
 
