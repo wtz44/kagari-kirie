@@ -1,0 +1,12 @@
+{
+  "name": "kagari-kirie",
+  "version": "2.0.0",
+  "description": "篝之雾枝——美少女万华镜1的女主角，300岁的吸血鬼",
+  "author": "Hermes Agent",
+  "created": "2026-06-03",
+  "updated": "2026-06-03",
+  "sources": 7,
+  "source_quality": "high",
+  "data_completeness": "complete",
+  "notes": "基于完整游戏原案12,203行日文对话分析，含全部H场景和剧情场景"
+}
